@@ -1,0 +1,298 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>
+    </SchemaVersion>
+    <ProjectGuid>{72F75C78-EA5C-4C7E-9ECA-8B7EC6DD5E4B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>AgogeComponents</RootNamespace>
+    <AssemblyName>AgogeComponents</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>Windows</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>AgogeComponents.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>AgogeComponents.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AWSSDK">
+      <HintPath>.\AWSSDK.dll</HintPath>
+    </Reference>
+    <Reference Include="Gma.QrCodeNet.Encoding.Net35">
+      <HintPath>..\Gma.QrCodeNet.Encoding.Net35.dll</HintPath>
+    </Reference>
+    <Reference Include="PdfSharp, Version=1.0.898.0, Culture=neutral, PublicKeyToken=f94615aa0424f9eb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>.\PdfSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Classes\Delegates.vb" />
+    <Compile Include="Classes\FaltandoDadosParametroPesquisa.vb" />
+    <Compile Include="Classes\HKey.vb" />
+    <Compile Include="Classes\iFormularioAbrivel.vb" />
+    <Compile Include="Classes\iFormularioAbrivelCodigo.vb" />
+    <Compile Include="Classes\iFormularioCrudNovo.vb" />
+    <Compile Include="CMC7\CMC7.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Componentes Base\DataGridViewComboBoxColumn.vb" />
+    <Compile Include="Componentes Base\DataGridViewTextBoxColumn.vb" />
+    <Compile Include="Componentes Base\MonthCalendar.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Componentes Base\NumeroUpDown.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Funcoes.vb" />
+    <Compile Include="Classes\Servidor.vb" />
+    <Compile Include="Classes\ServidorConexao.vb" />
+    <Compile Include="Componentes Base\ComboBox.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Componentes Base\Label.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Componentes Personalizados\CheckBox.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Componentes Personalizados\CpfMascara.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Componentes Personalizados\HoraMascara.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Componentes Personalizados\LinkButton.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Componentes Personalizados\NullableExtender.designer.vb">
+      <DependentUpon>NullableExtender.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Componentes Personalizados\NullableExtender.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Componentes Base\TextBox.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Formularios\FormularioDialogo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Formulario.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FormularioCrud.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FormularioMDI.Designer.vb">
+      <DependentUpon>FormularioMDI.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\FormularioMDI.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FormularioPesquisa.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FormularioRelatorio.Designer.vb">
+      <DependentUpon>FormularioRelatorio.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\FormularioRelatorio.vb" />
+    <Compile Include="Formularios\FormularioSDI.Designer.vb">
+      <DependentUpon>FormularioSDI.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\FormularioSDI.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Componentes Base\DateTimePicker.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Componentes Personalizados\UFTB.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Componentes Personalizados\CepMascara.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Componentes Personalizados\DataMascara.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Componentes Personalizados\TelefoneMascara.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Componentes Base\MaskedTextBox.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Componentes Personalizados\NumeroTB.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Componentes Personalizados\SexoCB.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Componentes Personalizados\DiaSemanaGridCB.vb" />
+    <Compile Include="Componentes Personalizados\MesCB.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Componentes Personalizados\MesGridCB.vb" />
+    <Compile Include="Componentes Personalizados\TipoPessoaCB.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ImageGallery\ImageGallery.designer.vb">
+      <DependentUpon>ImageGallery.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ImageGallery\ImageGallery.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Classes\Parametro.vb" />
+    <Compile Include="Classes\Relatorios.vb" />
+    <Compile Include="Web\Web.vb" />
+    <Compile Include="Storage\Storage.vb" />
+    <Compile Include="Storage\URL.vb" />
+    <Compile Include="Sync\SimpleSync.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Formularios\FormularioMDI.resx">
+      <DependentUpon>FormularioMDI.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FormularioRelatorio.resx">
+      <DependentUpon>FormularioRelatorio.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ImageGallery\ImageGallery.resx">
+      <DependentUpon>ImageGallery.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AppIco.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cadastrar.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cancelar.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Excluir.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pesquisar.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Salvar.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AWSSDK.dll" />
+    <Content Include="PdfSharp.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="ADODB">
+      <Guid>{B691E011-1797-432E-907A-4D8C69339129}</Guid>
+      <VersionMajor>6</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="CDO">
+      <Guid>{CD000000-8B95-11D1-82DB-00C04FB1625D}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
